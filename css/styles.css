@@ -57,7 +57,17 @@ a:focus,
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.current-page::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 48px;
+  height: 4px;
+  left: 0px;
+  top: 44px;
+  background: #404bbf;
+  border-radius: 2px;
+}
 .padding-y-max {
   padding-top: 120px;
   padding-bottom: 120px;
