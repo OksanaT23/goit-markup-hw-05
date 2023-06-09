@@ -585,6 +585,7 @@ a:focus,
 .projects-list-item .link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transform: translateY(0%);
 }
 .projects-list-item .title-subtitle {
   font-weight: 500;
@@ -618,9 +619,7 @@ a:focus,
   align-items: center;
   text-align: justify;
   transform: translateY(100%);
-  transition-duration: 250ms;
-  transition-property: transform;
-  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .overlay-container:hover .overlay-text,
 .overlay-container:focus .overlay-text {
