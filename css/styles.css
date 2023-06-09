@@ -221,6 +221,10 @@ a:focus,
   color: var(--link-active);
   transition-property: color;
 }
+.current-page:link,
+.current-page:visited {
+  color: #404bbf;
+}
 .current-page::after {
   content: "";
   display: block;
