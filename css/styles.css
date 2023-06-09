@@ -209,6 +209,7 @@ a:focus,
   align-items: center;
   gap: 40px;
   margin-left: 76px;
+  color: #404bbf;
 }
 
 .nav-link:link,
@@ -231,7 +232,6 @@ a:focus,
   background: #404bbf;
   bottom: -1px;
   border-radius: 2px;
-  color: #404bbf;
 }
 /* Contacts */
 .contacts {
