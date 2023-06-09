@@ -271,6 +271,8 @@ a:focus,
   color: var(--color-icon);
   display: flex;
   align-items: center;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon:hover,
 .icon:focus {
@@ -292,6 +294,7 @@ a:focus,
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icon .social-icons-link:hover,
 .social-icon .social-icons-link:active,
