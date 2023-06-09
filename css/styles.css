@@ -608,7 +608,7 @@ a:focus,
   height: 100%;
   left: 0;
   right: 0;
-  top: 100%;
+  top: 0;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
@@ -617,13 +617,14 @@ a:focus,
   display: flex;
   align-items: center;
   text-align: justify;
+  transform: translateY(100%);
   transition-duration: 250ms;
-  transition-property: top;
+  transition-property: transform;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .overlay-container:hover .overlay-text,
 .overlay-container:focus .overlay-text {
-  top: 0;
+  transform: translateY(0);
 }
 
 /* Footer */
