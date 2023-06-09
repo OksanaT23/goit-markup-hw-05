@@ -546,6 +546,10 @@ a:focus,
 .button:hover,
 .button:focus {
   transition-property: color, background-color, box-shadow;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item-active .button,
 .button:hover,
@@ -564,6 +568,7 @@ a:focus,
 }
 .projects-list-item {
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-list {
@@ -603,9 +608,12 @@ a:focus,
   left: 0;
   right: 0;
   top: 100%;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
   background-color: #4d5ae5b2;
-  padding: 10px;
-  color: #fff;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
   display: flex;
   align-items: center;
   text-align: justify;
